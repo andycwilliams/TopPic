@@ -6,9 +6,6 @@ import { getDatabase } from "firebase/database";
 const firebaseConfig = {
   apiKey: "apiKey",
   authDomain: "projectId.firebaseapp.com",
-  // For databases not in the us-central1 location, databaseURL will be of the
-  // form https://[databaseName].[region].firebasedatabase.app.
-  // For example, https://your-database-123.europe-west1.firebasedatabase.app
   databaseURL: "https://databaseName.firebaseio.com",
   storageBucket: "bucket.appspot.com",
 };
@@ -17,3 +14,20 @@ const app = initializeApp(firebaseConfig);
 
 // Get a reference to the database service
 const database = getDatabase(app);
+
+// service firebase.storage {
+//   match /b/{bucket}/o {
+//     match /{allPaths=**} {
+//       allow read, write: if request.auth != null;
+//     }
+//   }
+// }
+
+// rules_version = '2';
+// service cloud.firestore {
+//   match /databases/{database}/documents {
+//     match /{document=**} {
+//       allow read, write: if false;
+//     }
+//   }
+// }
