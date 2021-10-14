@@ -1,8 +1,8 @@
-import { render } from "@testing-library/react";
+// import { render } from "@testing-library/react";
 import React, { useEffect } from "react";
 import "./App.css";
-import Login from "./components/Login";
-import Logout from "./components/LogOut";
+// import Login from "./components/Login";
+// import Logout from "./components/LogOut";
 import firebase from "./Firebase/firebase";
 
 function App() {
