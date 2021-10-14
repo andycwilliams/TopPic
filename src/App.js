@@ -1,4 +1,8 @@
+import { render } from "@testing-library/react";
+import React from "react";
 import "./App.css";
+import Login from "./components/Login";
+import Logout from "./components/LogOut";
 
 function App() {
   return (
@@ -8,6 +12,8 @@ function App() {
           Test <code>Firebase</code> here.
         </p>
       </header>
+      <Login />
+      <Logout />
     </div>
   );
 }
