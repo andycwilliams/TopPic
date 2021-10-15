@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Image = ({url, key}) => {
+export const ImageDisplay = ({url, key}) => {
     return (
         <div>
             <img src={url} key={key} alt=''/>
