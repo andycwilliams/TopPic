@@ -4,7 +4,6 @@ import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
 // import { getDatabase } from "firebase/database";
 
 // Set the configuration for your app
-// TODO: Replace with your project's config object
 const firebaseConfig = {
   apiKey: "AIzaSyAHlQK32Pp8yODbhThzvC6vaE36exsGUDs",
   authDomain: "top-pic-28acd.firebaseapp.com",

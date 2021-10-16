@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react";
 import "./App.css";
-import ImageUpload from "./componets/ImageUpload/";
+import ImageUpload from "./components/ImageUpload/";
 import React, { useEffect } from "react";
 // import Login from "./components/Login";
 // import Logout from "./components/LogOut";
