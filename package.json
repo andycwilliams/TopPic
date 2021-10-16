@@ -4,22 +4,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@craco/craco": "^6.3.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
-<<<<<<< HEAD
     "gh-pages": "^3.2.3",
-=======
     "axios": "^0.23.0",
->>>>>>> main
     "heroku": "^7.59.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-google-login": "^5.2.2",
-<<<<<<< HEAD
-=======
     "react-infinite-scroll-component": "^6.1.0",
->>>>>>> main
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.2"
   },
@@ -48,5 +43,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.8",
+    "postcss": "^7.0.39",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.16"
   }
 }
