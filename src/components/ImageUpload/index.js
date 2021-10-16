@@ -19,7 +19,7 @@ const ImageUpload = () => {
         name="img"
         accept="image/*"
       />
-      <img src={uploadedImage} alt="no image yet" />
+      <img src={uploadedImage} alt="No image yet" />
     </div>
   );
 };
