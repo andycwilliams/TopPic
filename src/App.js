@@ -17,8 +17,8 @@ function App() {
           Test <code>Firebase</code> here.
         </p>
       </header>
-      {/* <Login />
-      <Logout /> */}
+      <Login />
+      <Logout />
     </div>
   );
 }
