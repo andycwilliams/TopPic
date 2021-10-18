@@ -33,25 +33,25 @@ Questions go here.
 
 ## Contributors:
 Kygan Dao 
-- [Email](kygandao23@gmail.com)
+- [Email](mailto:kygandao23@gmail.com)
 - [GitHub](https://github.com/Kygandao)
 - [LinkedIn](https://www.linkedin.com/in/kygan-dao-7a1893209/)
 
 Anthony Gibson
-- [Email](gibsona475@gmail.com)
+- [Email](mailto:gibsona475@gmail.com)
 - [GitHub](https://github.com/gibsona475)
 - [LinkedIn](https://www.linkedin.com/in/anthony-gibson-aaa7aa157/)
 
 Cedar Halvorson
-- [Email](cedarhalvorson@gmail.com)
+- [Email](mailto:cedarhalvorson@gmail.com)
 - [GitHub](https://github.com/CedarHalvosrson)
 
 Sean Russell
-- [Email](emailseanrussell@gmail.com)
+- [Email](mailto:emailseanrussell@gmail.com)
 - [GitHub](https://github.com/SeanRussell-GitHub)
 - [LinkedIn](https://www.linkedin.com/in/sean-russell-32880a210/)
 
 Andy Williams
-- [Email](awilliamscoding@gmail.com)
+- [Email](mailto:awilliamscoding@gmail.com)
 - [GitHub](https://github.com/andycwilliams)
 - [LinkedIn](https://www.linkedin.com/in/andrewcharleswilliams/)
