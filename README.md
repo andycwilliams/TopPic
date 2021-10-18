@@ -33,25 +33,25 @@ Questions go here.
 
 ## Contributors:
 Kygan Dao 
-- kygandao23@gmail.com
-- https://github.com/Kygandao
-- https://www.linkedin.com/in/kygan-dao-7a1893209/
+- [Email](kygandao23@gmail.com)
+- [GitHub](https://github.com/Kygandao)
+- [LinkedIn](https://www.linkedin.com/in/kygan-dao-7a1893209/)
 
 Anthony Gibson
-- gibsona475@gmail.com
-- https://github.com/gibsona475
-- https://www.linkedin.com/in/anthony-gibson-aaa7aa157/
+- [Email](gibsona475@gmail.com)
+- [GitHub](https://github.com/gibsona475)
+- [LinkedIn](https://www.linkedin.com/in/anthony-gibson-aaa7aa157/)
 
 Cedar Halvorson
-- cedarhalvorson@gmail.com
-- https://github.com/CedarHalvosrson
+- [Email](cedarhalvorson@gmail.com)
+- [GitHub](https://github.com/CedarHalvosrson)
 
 Sean Russell
-- emailseanrussell@gmail.com
-- https://github.com/SeanRussell-GitHub
-- https://www.linkedin.com/in/sean-russell-32880a210/
+- [Email](emailseanrussell@gmail.com)
+- [GitHub](https://github.com/SeanRussell-GitHub)
+- [LinkedIn](https://www.linkedin.com/in/sean-russell-32880a210/)
 
 Andy Williams
-- awilliamscoding@gmail.com
-- https://github.com/andycwilliams
-- https://www.linkedin.com/in/andrewcharleswilliams/
+- [Email](awilliamscoding@gmail.com)
+- [GitHub](https://github.com/andycwilliams)
+- [LinkedIn](https://www.linkedin.com/in/andrewcharleswilliams/)
