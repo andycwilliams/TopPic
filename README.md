@@ -45,6 +45,7 @@ Anthony Gibson
 Cedar Halvorson
 - [Email](mailto:cedarhalvorson@gmail.com)
 - [GitHub](https://github.com/CedarHalvosrson)
+- [LinkedIn](https://www.linkedin.com/in/cedar-halvorson-10791020a/)
 
 Sean Russell
 - [Email](mailto:emailseanrussell@gmail.com)
