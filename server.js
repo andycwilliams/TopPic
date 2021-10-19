@@ -28,3 +28,12 @@ router.get("/pics", async (req, res) => {
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
 });
+
+
+
+// get api for obtaining pics
+// get router to get pics set up
+// split to two pages
+// netlify 
+// heroku
+// mongodb+srv://Sean:<password>@cluster0.mgwha.mongodb.net/test
