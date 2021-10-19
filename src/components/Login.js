@@ -8,7 +8,6 @@ const clientId = '466243221982-l2hjhe4g7dcuq3h5ute68de36osa92su.apps.googleuserc
 function Login() {
     const onSuccess = (res) => {
         console.log('[Login Success] currentUser:', res.profileObj);
-
         //token
         refreshTokenSetup(res);
     };
@@ -17,9 +16,8 @@ function Login() {
         console.log('[Login failed] res:', res);
     };
 
-
 return (
-    <div>
+    <div className='flex flex-col justify-center items-center'>
         <GoogleLogin
         clientId={clientId}
         buttonText="Login"

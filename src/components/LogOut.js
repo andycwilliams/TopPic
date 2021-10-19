@@ -9,7 +9,7 @@ function Logout() {
     };
 
     return (
-        <div>
+        <div className='flex flex-col justify-center items-center'>
         <GoogleLogout
         clientId={clientId}
         buttonText="Logout"

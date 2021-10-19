@@ -1,36 +1,24 @@
-import { render } from '@testing-library/react';
-import React from 'react';
-import './App.css';
-import './index.css';
-import Login from './componets/Login';
-import Logout from './componets/LogOut';
-import Product from './componets/Product';
-import products from './data/products.json';
+import { render } from "@testing-library/react";
+import "./App.css";
+// import ImageUpload from "./components/ImageUpload/";
+import React, { useEffect } from "react";
+import Login from "./components/Login";
+// import Logout from "./components/LogOut";
 
 function App() {
   return (
-    <div>
-      <div>
-        <img src={process.env.PUBLIC_URL + '/images/TopPicLogo200x200.png'} alt='Logo'/>
+    <div className='flex flex-col justify-center items-center w-screen h-screen bg-photo-collage bg-no-repeat bg-cover'>
+      <div className='flex flex-col justify-center items-center w-2/4 h-2/6 bg-gray-200 bg-opacity-90'>
+        <p className='text-5xl my-3'>Top Pic</p>
+        <p>Your Inspiration Station</p>
       </div>
-      <div>
-        <Login />
-        <Logout />
+      <div className='flex justify-center items-center w-2/4 h-1/6 bg-gray-200 bg-opacity-90'>
+        <div className='flex justify-center items-center w-2/4'>
+          <Login />
+        </div>
       </div>
-    
-    <div className="bg-gray-200 py-4 dark:bg-gray-800">
-      <div className="md:w-1/4 mx-2 md:mx-auto">
-        {products.map((product) => (
-          <Product product={product} key={product.id} />
-          ))}
-          
-      </div>
-    </div>
     </div>
   );
 }
-
-
-
 
 export default App;
