@@ -13,7 +13,7 @@ function App() {
   return (
     <div>
       <div className='flex flex-col justify-center items-center h-screen bg-photo-collage bg-no-repeat bg-fixed bg-cover'>
-
+        <button onClick={() => fetch("/api").then(res => console.log(res))}>Click for api</button>
       <MainLandingPage />
 
         <div className='flex justify-center items-center w-2/4 h-1/6 bg-gray-200 bg-opacity-90'>
