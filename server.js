@@ -1,7 +1,7 @@
 const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
-const router = express.Router()
+const router = express.Router();
 
 const PORT = process.env.PORT || 3000;
 
@@ -16,19 +16,20 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/", { useNewUrlParser: true });
-
-router.get("/pics", async (req, res) => {
-  const pics = await Pic.find()
-  res.send(pics)
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/", {
+  useNewUrlParser: true,
 });
 
-
+router.get("/pics", async (req, res) => {
+  const pics = await Pic.find();
+  res.send(pics);
+});
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
 });
 
+<<<<<<< HEAD
 // from Maryus:
 // db.once('open', () => {
 //   app.listen(PORT, () => {
@@ -39,9 +40,11 @@ app.listen(PORT, () => {
 
 
 
+=======
+>>>>>>> main
 // get api for obtaining pics
 // get router to get pics set up
 // split to two pages
-// netlify 
+// netlify
 // heroku
 // mongodb+srv://Sean:<password>@cluster0.mgwha.mongodb.net/test
