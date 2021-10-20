@@ -18,11 +18,9 @@
   "scripts": {
     "start:prod": "node server.js",
     "start:dev": "concurrently \"npm run server\" \"npm run client\"",
-    "client": "cd client && craco start && npm run start",
+    "client": "cd client && npm run start",
     "heroku-postbuild": "npm run build",
-    "build": "cd client && craco build && npm run build",
-    "test": "craco test && npm run test",
-    "eject": "react-scripts eject",
+    "build": "cd client && npm run build",
     "server": "nodemon server.js"
   },
   "devDependencies": {
