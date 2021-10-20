@@ -20,7 +20,7 @@ Installation
 Usage
 
 ## License
-This application is covered under the [LICENSE)](HTML) license which allows for ODbL.
+This application is covered under [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT).
 
 ## Contributing
 Contributing guidelines
