@@ -1,6 +1,6 @@
 # Top Pic
 
-![Alt text](LICENSE BADGE HTML)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Final Project for University of Oregon Full-Stack Developer Boot Camp. An image upload app with fewer restrictions.
 
@@ -27,7 +27,7 @@ Usage
 
 ## License
 
-This application is covered under the [LICENSE)](HTML) license which allows for ODbL.
+This application is covered under the [MIT License](https://opensource.org/licenses/MIT).
 
 ## Contributing
 
