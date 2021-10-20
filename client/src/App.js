@@ -1,21 +1,19 @@
-import { render } from "@testing-library/react";
+// import { render } from "@testing-library/react";
 import "./App.css";
 import React, { useEffect } from "react";
 import MainLandingPage from "./components/MainLandingPage";
 import ExplorePage from "./components/ExplorePage";
 
-
 function App() {
-
   const handlePageChange = (e) => {
     e.preventDefault();
-    console.log('clicked to change pages')
+    console.log("clicked to change pages");
     //TODO: CREATE FUNCTION TO HANDLE PAGE CHANGE... SWITCH CASE? ROUTER-DOM
-  }
+  };
   return (
     <div>
       <div className='flex flex-col justify-center items-center h-screen bg-photo-collage bg-no-repeat bg-fixed bg-cover'>
-
+        <button onClick={() => fetch("/api").then(res => console.log(res))}>Click for api</button>
       <MainLandingPage />
 
         <div className='flex justify-center items-center w-2/4 h-1/6 bg-gray-200 bg-opacity-90'>
