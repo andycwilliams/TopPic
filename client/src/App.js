@@ -1,21 +1,20 @@
-
+// import { render } from "@testing-library/react";
 import "./App.css";
 import React, { useState } from "react";
 import MainLandingPage from "./components/MainLandingPage";
 import ExplorePage from "./components/ExplorePage";
 
-
 function App() {
-
-  const [currentPage, setCurrentPage] = useState('Main');
-
-  const handlePageChange = (page, e) => {
+  const handlePageChange = (e) => {
     e.preventDefault();
-    console.log('clicked to change pages', page)
+    console.log("clicked to change pages");
     //TODO: CREATE FUNCTION TO HANDLE PAGE CHANGE... SWITCH CASE? ROUTER-DOM
-    setCurrentPage(page);
-  }
-
+  };
+  return (
+    <div>
+      <div className='flex flex-col justify-center items-center h-screen bg-photo-collage bg-no-repeat bg-fixed bg-cover'>
+        <button onClick={() => fetch("/api").then(res => console.log(res))}>Click for api</button>
+      <MainLandingPage />
 
   const renderPage = () => {
     console.log('RENDER APPJS component', currentPage);
