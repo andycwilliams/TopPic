@@ -1,6 +1,6 @@
 // import { render } from "@testing-library/react";
 import "./App.css";
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import MainLandingPage from "./components/MainLandingPage";
 import ExplorePage from "./components/ExplorePage";
 
@@ -16,14 +16,34 @@ function App() {
         <button onClick={() => fetch("/api").then(res => console.log(res))}>Click for api</button>
       <MainLandingPage />
 
-        <div className='flex justify-center items-center w-2/4 h-1/6 bg-gray-200 bg-opacity-90'>
-          <a href='/' onClick={handlePageChange}>Continue without Signing In</a>
-        </div>
+  const renderPage = () => {
+    console.log('RENDER APPJS component', currentPage);
+    //Sswitch case 
+    switch (currentPage) {
+      case 'Main':
+        return <MainLandingPage handlePageChange={handlePageChange} currentPage={'Main'} />;
+      case 'Explore':
+        return <ExplorePage />;
+      default:
+        return <MainLandingPage handlePageChange={handlePageChange} currentPage={'Main'} />
+    }
+  }
 
+  return (
+    <div>
+      <div className='flex flex-col justify-center items-center h-screen bg-photo-collage bg-no-repeat bg-fixed bg-cover'>
+        {/* By default its render MAin Planding page  */}
+        {renderPage()}
+        {/* hide or  show this button once the user logins in without signin   */}
+        {currentPage === 'Explore' ? <div></div> :
+          <div className='flex justify-center items-center w-2/4 h-1/6 bg-gray-200 bg-opacity-90'>
+            {/* on click of this button its render the explore page  */}
+            <a href='/' name='Explore' onClick={(e) => handlePageChange('Explore', e)} > Continue without Signing In</a>
+          </div>
+        }
       </div>
-    {/*^^ FIX PAGE TO ROUTE TO EXPLORE PAGE ON BUTTON CLICK ^^ THIS SHOULD NOT BE DISPLAYING UNTIL BUTTON IS CLICKED*/}
-    <ExplorePage />
-  </div>
+
+    </div>
   );
 }
 
