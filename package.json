@@ -27,7 +27,12 @@
     "start": "craco start && npm run start",
     "build": "craco build && npm run build",
     "test": "craco test && npm run test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "install-client": "cd client && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build",
+    "server": "nodemon server.js",
+    "develop": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix client\"",
+    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix client\""
   },
   "eslintConfig": {
     "extends": [
