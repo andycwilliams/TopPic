@@ -3,6 +3,8 @@ const logger = require("morgan");
 const mongoose = require("mongoose");
 const router = express.Router();
 const path = require("path");
+const dotenv = require("dotenv");
+dotenv.config();
 
 const PORT = process.env.PORT || 3001;
 
@@ -12,18 +14,20 @@ const app = express();
 
 app.use(logger("dev"));
 
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 if (process.env.NODE_ENV === "production") {
-  // app.use(express.static(path.join(__dirname, "client", "build")));
-  // app.use(express.static(path.join(__dirname, 'client/build')));
-  app.use("/static", express.static(path.join(__dirname, "client/build")));
+  app.use(express.static(path.join(__dirname, "./client/build")));
+  // app.use(express.static(path.join(__dirname, "client/build")));
+  // app.use("/static", express.static(path.join(__dirname, "client/build")));
 }
 
 if (process.env.NODE_ENV === "production") {
-  app.get("/*", (req, res) => {
-    res.sendFile(join(__dirname, "client", "build", "index.html"));
+  console.log("Test");
+  app.get("*", (req, res) => {
+    console.log("Test2");
+    res.sendFile(path.join(__dirname, "./client/build/index.html"));
   });
 }
 
