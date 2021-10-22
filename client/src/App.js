@@ -40,7 +40,7 @@ function App() {
 
   return (
     <div>
-      <div className="flex flex-col justify-center items-center h-screen bg-photo-collage bg-no-repeat bg-fixed bg-cover">
+      <div className="flex flex-col justify-center items-center bg-photo-collage bg-no-repeat bg-fixed bg-cover">
         {/* By default its render MAin Planding page  */}
         {renderPage()}
         {/* hide or  show this button once the user logins in without signin   */}
