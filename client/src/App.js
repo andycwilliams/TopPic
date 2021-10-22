@@ -47,7 +47,8 @@ function App() {
         {currentPage === "Explore" ? (
           <div></div>
         ) : (
-          <div className="flex justify-center items-center w-2/4 bg-gray-200 bg-opacity-90 "> {/* MARGIN HERE */}
+          <div className="hover:bg-blue-300 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 flex justify-center items-center w-2/4 h-1/6 bg-gray-200 bg-opacity-90">
+            {/* flex justify-center items-center w-2/4 h-1/6 bg-gray-200 bg-opacity-90 */}
             {/* on click of this button its render the explore page  */}
             <a
               href="/"
