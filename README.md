@@ -34,14 +34,14 @@ Create an account once the application is opened. Or click the continue without 
 This application is covered under the [MIT License](https://opensource.org/licenses/MIT).
 
 ## Contributing
-To continue contributing you could edit the CSS or add extra functionality such as making a search functionality so you can view certain users profiles. you could also add things such as likes/comments 
+To continue contributing you could edit the CSS or add extra functionality such as making a search functionality so you can view certain users profiles. you could also add things such as likes/comments. 
 
 
 ## Tests
 In order to test this application you can just use it! Try using the features such as logging in, uploading a photo and logging out.
 
 ## Questions
-Like this application? feel free to contact us heres our contact information in the contributors tab below 
+Like this application? feel free to contact us! Heres our contact information in the contributors tab below.
 
 ## Contributors:
 Cedar Halvorson
