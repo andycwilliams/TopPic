@@ -71,14 +71,14 @@ function App() {
 
   return (
     <div>
-      <div className="flex flex-col justify-center items-center h-screen bg-photo-collage bg-no-repeat bg-fixed bg-cover">
+      <div className="flex flex-col justify-center items-center bg-photo-collage bg-no-repeat bg-fixed bg-cover">
         {/* By default its render MAin Planding page  */}
         {renderPage()}
         {/* hide or  show this button once the user logins in without signin   */}
         {currentPage === "Explore" ? (
           <div></div>
         ) : (
-          <div className="flex justify-center items-center w-2/4 h-1/6 bg-gray-200 bg-opacity-90">
+          <div className="flex justify-center items-center w-2/4 bg-gray-200 bg-opacity-90 "> {/* MARGIN HERE */}
             {/* on click of this button its render the explore page  */}
             <a
               href="/"
