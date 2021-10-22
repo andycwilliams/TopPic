@@ -4,8 +4,8 @@ const Schema = mongoose.Schema;
 
 const PicSchema = new Schema({
   url: {
-    type: String
-  }
+    type: String,
+  },
 });
 
 const Pic = mongoose.model("Pic", PicSchema);

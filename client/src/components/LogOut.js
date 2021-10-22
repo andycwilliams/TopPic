@@ -1,22 +1,23 @@
 import React from "react";
-import { GoogleLogout } from 'react-google-login';
+import { GoogleLogout } from "react-google-login";
 
-const clientId = '466243221982-l2hjhe4g7dcuq3h5ute68de36osa92su.apps.googleusercontent.com';
+const clientId =
+  "466243221982-l2hjhe4g7dcuq3h5ute68de36osa92su.apps.googleusercontent.com";
 
 function Logout() {
-    const onSuccess = () => {
-        alert('Logout made successfully');
-    };
+  const onSuccess = () => {
+    alert("Logout made successfully");
+  };
 
-    return (
-        <div className='flex flex-col justify-center items-center'>
-        <GoogleLogout
+  return (
+    <div className="flex flex-col justify-center items-center">
+      <GoogleLogout
         clientId={clientId}
         buttonText="Logout"
         onLogoutSuccess={onSuccess}
-        ></GoogleLogout>
-        </div>
-    );
+      ></GoogleLogout>
+    </div>
+  );
 }
 
 export default Logout;

@@ -30,14 +30,6 @@ export default uploadToFirebase;
 
 // ----------------------------------------------------------------
 
-// apiKey: "AIzaSyAHlQK32Pp8yODbhThzvC6vaE36exsGUDs",
-// authDomain: "top-pic-28acd.firebaseapp.com",
-// databaseURL: "https://top-pic-28acd-default-rtdb.firebaseio.com",
-// projectId: "top-pic-28acd",
-// storageBucket: "top-pic-28acd.appspot.com",
-// messagingSenderId: "722258064323",
-// appId: "1:722258064323:web:ab05a106fde4fca9fcc376",
-
 // import { initializeApp } from "firebase/app";
 // import { getDatabase } from "firebase/database";
 
