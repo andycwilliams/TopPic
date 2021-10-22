@@ -42,6 +42,14 @@ app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
 });
 
+// from Maryus:
+// db.once('open', () => {
+//   app.listen(PORT, () => {
+//     console.log(`API server running on port ${PORT}!`);
+//     console.log(`Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`);
+//   });
+// });
+
 // get api for obtaining pics
 // get router to get pics set up
 // split to two pages

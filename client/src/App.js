@@ -38,19 +38,21 @@ function App() {
 
   return (
     <div>
-      <div className="flex flex-col justify-center items-center h-screen bg-photo-collage bg-no-repeat bg-fixed bg-cover">
+      <div className="flex flex-col justify-center items-center bg-photo-collage bg-no-repeat bg-fixed bg-cover">
         {/* By default its render MAin Planding page  */}
         {renderPage()}
         {/* hide or  show this button once the user logins in without signin   */}
         {currentPage === "Explore" ? (
           <div></div>
         ) : (
-          <div className="flex justify-center items-center w-2/4 h-1/6 bg-gray-200 bg-opacity-90">
+          <div className="hover:bg-blue-300 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 flex justify-center items-center w-2/4 h-1/6 bg-gray-200 bg-opacity-90">
+            {/* flex justify-center items-center w-2/4 h-1/6 bg-gray-200 bg-opacity-90 */}
             {/* on click of this button its render the explore page  */}
             <a
               href="/"
               name="Explore"
               onClick={(e) => handlePageChange("Explore", e)}
+              // this makes it so when you click the continue without sign in in you can view the rest of the application
             >
               {" "}
               Continue without Signing In

@@ -2,11 +2,12 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Final Project for University of Oregon Full-Stack Developer Boot Camp. An image upload app with fewer restrictions.
+Final Project for University of Oregon Full-Stack Developer Boot Camp. An image upload app similar to Instagram but with fewer restrictions. The tools used are Heroku, Mongoose, Firebase, Express, and Tailwind.
 
-Netlify, MongoDb, Firebase, Tailwind
-
-Google Docs: https://docs.google.com/document/d/1116oqbxVORGN079Sws8_FvTuMB-eJRXHp-P3otvAcuo/edit?usp=sharing
+- Google Docs wireframe: [link](https://docs.google.com/document/d/1116oqbxVORGN079Sws8_FvTuMB-eJRXHp-P3otvAcuo/edit?usp=sharing)
+- Heroku deployment: [link](https://toppic-project3.herokuapp.com/)
+- GitHub application: [link](https://andycwilliams.github.io/TopPic/)
+- GitHub repository: [link](https://github.com/andycwilliams/TopPic)
 
 ## Table of Contents
 
@@ -18,30 +19,27 @@ Google Docs: https://docs.google.com/document/d/1116oqbxVORGN079Sws8_FvTuMB-eJRX
 - [Questions](#questions)
 
 ## Installation
-
-Installation
+Installation of this is available to clone from GitHub [here](https://github.com/andycwilliams/TopPic). 
+Simply clone the repository and do an ```npm i``` in an integrated terminal on the following files. ```functions> index.js``` and ```client> static> 2.0e907cc5.chunk.js``` then finally one on ```server.js```. The application is also available on Heroku to view since downloading and installation are not necessary for use.
 
 ## Usage
-
-Usage
+To use this application, you can visit the Heroku site linked [here](https://toppic-project3.herokuapp.com/).
+Create an account once the application is opened. Or click the continue button without a login and then upload your photos, or scroll through the page and view other users posts. Once you're ready, click the logout button. 
 
 ## License
-
 This application is covered under the [MIT License](https://opensource.org/licenses/MIT).
 
 ## Contributing
-
-Contributing guidelines
+To continue contributing you could edit the CSS or add extra functionality such as making a search functionality so you can view certain users profiles. Additionally, you could add things such as likes/comments.
 
 ## Tests
-
-Tests
+In order to test this application you can just use it! Try using the features such as logging in, uploading a photo and logging out.
 
 ## Questions
-
-Questions go here.
+Like this application? Feel free to contact us! Here's our contact information in the Contributors tab below.
 
 ## Contributors:
+Kygan Dao, Anthony Gibson, Cedar Halvorson, Sean Russell, and Andy Williams.
 
 Kygan Dao
 
