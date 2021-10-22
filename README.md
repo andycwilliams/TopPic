@@ -8,6 +8,10 @@ Netlify, MongoDb, Firebase, Tailwind
 
 Google Docs: https://docs.google.com/document/d/1116oqbxVORGN079Sws8_FvTuMB-eJRXHp-P3otvAcuo/edit?usp=sharing
 
+Heres a link to the deployed heroku application! https://toppic-project3.herokuapp.com/
+
+Heres a link to the deployed github application! https://github.com/andycwilliams/TopPic
+
 ## Table of Contents
 
 - [Installation](#installation)
@@ -18,32 +22,32 @@ Google Docs: https://docs.google.com/document/d/1116oqbxVORGN079Sws8_FvTuMB-eJRX
 - [Questions](#questions)
 
 ## Installation
+Installation of this is available from github here https://github.com/andycwilliams/TopPic just clone the repository and do an npm i in an integrated terminal on the following files. functions> index.js and client> static> 2.0e907cc5.chunk.js then finally one on server.js the application is also available on heroku to view since downloading is not necessary for use.
 
-Installation
 
 ## Usage
-
-Usage
+To use this application you can visit the heroku site linked here https://toppic-project3.herokuapp.com/
+Create an account once the application is opened. Or click the continue without a login and then upload your photos, or scroll through the page and view other users posts. Once you're ready click the logout button. 
 
 ## License
 
 This application is covered under the [MIT License](https://opensource.org/licenses/MIT).
 
 ## Contributing
+To continue contributing you could edit the CSS or add extra functionality such as making a search functionality so you can view certain users profiles. you could also add things such as likes/comments 
 
-Contributing guidelines
 
 ## Tests
-
-Tests
+In order to test this application you can just use it! Try using the features such as logging in, uploading a photo and logging out.
 
 ## Questions
-
-Questions go here.
+Like this application? feel free to contact us heres our contact information in the contributors tab below 
 
 ## Contributors:
-
+Cedar Halvorson
+Sean Russell
 Kygan Dao
+Andy Williams
 
 - [Email](mailto:kygandao23@gmail.com)
 - [GitHub](https://github.com/Kygandao)
