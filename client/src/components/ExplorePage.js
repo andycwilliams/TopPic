@@ -5,6 +5,8 @@ import "../App.css";
 import Product from "./Product";
 import products from "../data/products.json";
 
+
+// this is the explore page this is the second thing to open when the application is started you can get here when you click continue without signing in or by logging in.
 const ExplorePage = () => {
   return (
     <div className="flex flex-col justify-center items-center bg-photo-collage bg-no-repeat bg-fixed bg-cover">

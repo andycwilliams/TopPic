@@ -16,7 +16,7 @@ const ImageUploader = () => {
     console.log(`url: ${url}`);
     setUploadedImage(url);
   };
-
+//  this is the front end that handles image upload. It tells the user the kinds of accepted it does not however display the users uploaded images that is handled by the src> components> partials> imagedesplay.js 
   return (
     <div className="flex justify-center items-center my-2">
       <div id="image-uploader">
