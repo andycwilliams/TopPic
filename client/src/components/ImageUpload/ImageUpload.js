@@ -10,7 +10,7 @@ const ImageUpload = () => {
     <div className="flex justify-center items-center my-2">
       <div id="image-uploader">
         <div>
-          <p className="text-2xl text-center my-3">Inspire Others</p>
+          <p className="text-2xl text-center my-3 bg-gray-200 rounded-lg">Inspire Others</p>
         </div>
 
         <div class="py-1 h-1/6 bg-gray-200 rounded-lg">

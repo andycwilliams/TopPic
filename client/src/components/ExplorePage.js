@@ -19,7 +19,11 @@ const ExplorePage = () => {
                         ))}
                     </div>
                     </div>
-                
+
+        <div>
+          <p className=" text-center my-3 bg-gray-200 rounded-lg"><p><a href="https://toppic-project3.herokuapp.com/">return to homepage</a></p></p>
+        </div>
+                    
             </div>
             <div className= 'm-1 absolute bottom-0 left-0'>
                     <Logout />
