@@ -5,17 +5,6 @@ import { useState } from "react";
 // import { initializeApp } from "firebase/app";
 // import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
 
-// const uploadToFirebase = async (file) => {
-//   console.log(`file: ${file}`);
-//   const storage = getStorage();
-//   const storageRef = ref(storage, file.name);
-//   const snapshot = await uploadBytes(storageRef, file);
-//   console.log(`snapshot: ${snapshot}`);
-//   const url = await getDownloadURL(snapshot.ref);
-//   console.log(`url: ${url}`);
-//   return url;
-// };
-
 const ImageUploader = () => {
   const [uploadedImage, setUploadedImage] = useState("");
   const handleImageUpload = async (image) => {
