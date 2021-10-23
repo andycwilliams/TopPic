@@ -27,6 +27,7 @@ const uploadToFirebase = async (file) => {
 };
 
 export default uploadToFirebase;
+// export default firebaseInit;
 // export default { firebaseInit, uploadToFirebase };
 
 // ----------------------------------------------------------------

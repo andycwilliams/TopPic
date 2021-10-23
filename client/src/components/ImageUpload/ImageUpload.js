@@ -1,13 +1,30 @@
 // import { getStorage, ref } from "firebase/storage";
 import uploadToFirebase from "./firebase";
 import { useState } from "react";
+// import ImageUpload from "./index";
+// import { initializeApp } from "firebase/app";
+// import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
 
-const ImageUpload = () => {
+// const uploadToFirebase = async (file) => {
+//   console.log(`file: ${file}`);
+//   const storage = getStorage();
+//   const storageRef = ref(storage, file.name);
+//   const snapshot = await uploadBytes(storageRef, file);
+//   console.log(`snapshot: ${snapshot}`);
+//   const url = await getDownloadURL(snapshot.ref);
+//   console.log(`url: ${url}`);
+//   return url;
+// };
+
+const ImageUploader = () => {
   const [uploadedImage, setUploadedImage] = useState("");
   const handleImageUpload = async (image) => {
-    console.log(image);
+    console.log("Image uploaded?");
+    console.log(`image: ${image}`);
     const file = image.target.files[0];
+    console.log(`file: ${file}`);
     const url = await uploadToFirebase(file);
+    console.log(`url: ${url}`);
     setUploadedImage(url);
   };
 
@@ -17,7 +34,16 @@ const ImageUpload = () => {
         <div>
           <p className="text-2xl text-center my-3">Inspire Others</p>
         </div>
-
+        {/* <div>
+          <input
+            onChange={handleImageUpload}
+            type="file"
+            id="img"
+            name="img"
+            accept="image/*"
+          />
+          <img src={uploadedImage} alt="No image yet" />
+        </div> */}
         <div class="py-1 h-1/6 bg-gray-200 rounded-lg">
           <div class="max-w-md mx-auto rounded-lg overflow-hidden md:max-w-xl">
             <div class="md:flex">
@@ -41,6 +67,7 @@ const ImageUpload = () => {
                     accept="image/*"
                     class="h-full w-full opacity-0"
                   />
+                  {/* <img src={uploadedImage} /> */}
                 </div>
               </div>
             </div>
@@ -51,4 +78,4 @@ const ImageUpload = () => {
   );
 };
 
-export default ImageUpload;
+export default ImageUploader;

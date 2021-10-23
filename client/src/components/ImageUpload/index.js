@@ -1,28 +1,27 @@
-// import uploadToFirebase from "./firebase";
-// import imageUpload from "./ImageUpload";
-// import { useState } from "react";
+import uploadToFirebase from "./firebase";
+import { useState } from "react";
 
-// const ImageUpload = () => {
-//   const [uploadedImage, setUploadedImage] = useState("");
+const ImageUpload = () => {
+  const [uploadedImage, setUploadedImage] = useState("");
 
-//   const handleImageUpload = async (something) => {
-//     const file = something.target.files[0];
-//     const url = await uploadToFirebase(file);
-//     setUploadedImage(url);
-//   };
+  const handleImageUpload = async (something) => {
+    const file = something.target.files[0];
+    const url = await uploadToFirebase(file);
+    setUploadedImage(url);
+  };
 
-//   return (
-//     <div>
-//       <input
-//         onChange={handleImageUpload}
-//         type="file"
-//         id="img"
-//         name="img"
-//         accept="image/*"
-//       />
-//       <img src={uploadedImage} alt="No image yet" />
-//     </div>
-//   );
-// };
+  return (
+    <div>
+      <input
+        onChange={handleImageUpload}
+        type="file"
+        id="img"
+        name="img"
+        accept="image/*"
+      />
+      <img src={uploadedImage} />
+    </div>
+  );
+};
 
-// export default ImageUpload;
+export default ImageUpload;
