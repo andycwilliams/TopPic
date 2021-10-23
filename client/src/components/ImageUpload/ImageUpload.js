@@ -34,16 +34,6 @@ const ImageUploader = () => {
         <div>
           <p className="text-2xl text-center my-3">Inspire Others</p>
         </div>
-        {/* <div>
-          <input
-            onChange={handleImageUpload}
-            type="file"
-            id="img"
-            name="img"
-            accept="image/*"
-          />
-          <img src={uploadedImage} alt="No image yet" />
-        </div> */}
         <div class="py-1 h-1/6 bg-gray-200 rounded-lg">
           <div class="max-w-md mx-auto rounded-lg overflow-hidden md:max-w-xl">
             <div class="md:flex">

@@ -5,6 +5,7 @@ const ImageUpload = () => {
   const [uploadedImage, setUploadedImage] = useState("");
 
   const handleImageUpload = async (something) => {
+    console.log(something);
     const file = something.target.files[0];
     const url = await uploadToFirebase(file);
     setUploadedImage(url);
