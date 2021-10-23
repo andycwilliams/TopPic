@@ -1,35 +1,17 @@
-import { getStorage, ref } from "firebase/storage";
-
-// Create a root reference
-const storage = getStorage();
-
-// Create a reference to 'mountains.jpg'
-const mountainsRef = ref(storage, "home.png");
-
-// Create a reference to 'images/mountains.jpg'
-const mountainImagesRef = ref(storage, "images/home.png");
-
-// While the file names are the same, the references point to different files
-mountainsRef.name === mountainImagesRef.name; // true
-mountainsRef.fullPath === mountainImagesRef.fullPath; // false
+import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
 
 const ImageUpload = () => {
-  const handleImageUpload = (image) => {
-    console.log(image);
-
-    // // Create a root reference
-    // const storage = getStorage();
-
-    // // Create a reference to 'mountains.jpg'
-    // const mountainsRef = ref(storage, "mountains.jpg");
-
-    // // Create a reference to 'images/mountains.jpg'
-    // const mountainImagesRef = ref(storage, "images/mountains.jpg");
-
-    // // While the file names are the same, the references point to different files
-    // mountainsRef.name === mountainImagesRef.name; // true
-    // mountainsRef.fullPath === mountainImagesRef.fullPath; // false
+  // const handleImageUpload = (image) => {
+  // console.log(image);
+  const handleImageUpload = async (file) => {
+    console.log(file);
+    const storage = getStorage();
+    const storageRef = ref(storage, file.name);
+    const snapshot = await uploadBytes(storageRef, file);
+    const url = await getDownloadURL(snapshot.ref);
+    return url;
   };
+  // };
 
   return (
     <div className="flex justify-center items-center my-2">

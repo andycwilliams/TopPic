@@ -1,5 +1,5 @@
 import uploadToFirebase from "./firebase";
-import imageUpload from "./imageUpload";
+import imageUpload from "./ImageUpload";
 import { useState } from "react";
 
 const ImageUpload = () => {
