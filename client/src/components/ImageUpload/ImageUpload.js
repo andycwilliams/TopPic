@@ -1,11 +1,11 @@
 // import uploadImage from "firebase";
-
+// this is a image upload this is more or less a placeholder/ test example to prove the function works
 const ImageUpload = () => {
   const handleImageUpload = (something) => {
     console.log(something);
     // uploadImage()
   };
-
+//  this is the front end that handles image upload. It tells the user the kinds of accepted it does not however display the users uploaded images that is handled by the src> components> partials> imagedesplay.js 
   return (
     <div className="flex justify-center items-center my-2">
       <div id="image-uploader">
@@ -47,3 +47,4 @@ const ImageUpload = () => {
 };
 
 export default ImageUpload;
+// this exports the following file ImageUpload.
