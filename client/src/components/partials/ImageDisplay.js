@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
-export const ImageDisplay = ({url, key}) => {
-    return (
-        <div>
-            <img src={url} key={key} alt=''/>
-        </div>
-    )
-}
+export const ImageDisplay = ({ url, key }) => {
+  return (
+    <div>
+      <img src={url} key={key} alt="" />
+    </div>
+  );
+};
