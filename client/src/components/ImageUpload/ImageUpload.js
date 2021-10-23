@@ -1,17 +1,15 @@
-import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
+// import { getStorage, ref } from "firebase/storage";
+import uploadToFirebase from "./firebase";
+import { useState } from "react";
 
 const ImageUpload = () => {
-  // const handleImageUpload = (image) => {
-  // console.log(image);
-  const handleImageUpload = async (file) => {
-    console.log(file);
-    const storage = getStorage();
-    const storageRef = ref(storage, file.name);
-    const snapshot = await uploadBytes(storageRef, file);
-    const url = await getDownloadURL(snapshot.ref);
-    return url;
+  const [uploadedImage, setUploadedImage] = useState("");
+  const handleImageUpload = async (image) => {
+    console.log(image);
+    const file = image.target.files[0];
+    const url = await uploadToFirebase(file);
+    setUploadedImage(url);
   };
-  // };
 
   return (
     <div className="flex justify-center items-center my-2">

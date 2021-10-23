@@ -15,18 +15,19 @@ const firebaseConfig = {
   appId: process.env.DEV_APP_ID,
 };
 
-const app = initializeApp(firebaseConfig);
+const firebaseInit = initializeApp(firebaseConfig);
 
-// // 'file' comes from the Blob or File API
-// const uploadToFirebase = async (file) => {
-//   const storage = getStorage();
-//   const storageRef = ref(storage, file.name);
-//   const snapshot = await uploadBytes(storageRef, file);
-//   const url = await getDownloadURL(snapshot.ref);
-//   return url;
-// };
+// 'file' comes from the Blob or File API
+const uploadToFirebase = async (file) => {
+  const storage = getStorage();
+  const storageRef = ref(storage, file.name);
+  const snapshot = await uploadBytes(storageRef, file);
+  const url = await getDownloadURL(snapshot.ref);
+  return url;
+};
 
-// export default uploadToFirebase;
+export default uploadToFirebase;
+// export default { firebaseInit, uploadToFirebase };
 
 // ----------------------------------------------------------------
 
