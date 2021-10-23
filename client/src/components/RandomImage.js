@@ -3,7 +3,7 @@ import { Loader } from "./partials/Loader";
 import { ImageDisplay } from "./partials/ImageDisplay";
 import Axios from "axios";
 import InfiniteScroll from "react-infinite-scroll-component";
-
+// This is used to grab our stock photos for the presentation of the application.
 function RandomImage() {
   const [randomImages, setRandomImages] = useState([]);
 
