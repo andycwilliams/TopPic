@@ -1,4 +1,3 @@
-const Sequelize = require("sequelize");
 import { initializeApp } from "firebase/app";
 import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
 require("dotenv").config();

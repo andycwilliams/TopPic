@@ -46,7 +46,7 @@ const ImageUploader = () => {
                     accept="image/*"
                     class="h-full w-full opacity-0"
                   />
-                  <img src={uploadedImage} />
+                  {/* <img src={uploadedImage} /> */}
                 </div>
               </div>
             </div>
