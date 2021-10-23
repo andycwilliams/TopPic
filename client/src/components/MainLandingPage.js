@@ -9,6 +9,16 @@ const MainLandingPage = ({ handlePageChange, currentPage }) => {
       <div className="flex justify-center items-center w-2/4 h-1/6 mt-10">
         <Login handlePageChange={handlePageChange} />
       </div>
+
+      <div>
+        <p className="m-1 absolute top-0 left-0 bg-gray-200 rounded-lg">
+          <p>
+            <a href="https://github.com/andycwilliams/TopPic">
+              view the github repository for this project
+            </a>
+          </p>
+        </p>
+      </div>
     </div>
   );
 };
