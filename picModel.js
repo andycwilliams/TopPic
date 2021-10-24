@@ -11,3 +11,5 @@ const PicSchema = new Schema({
 const Pic = mongoose.model("Pic", PicSchema);
 
 module.exports = Pic;
+
+// This is the schema for the pictures in this application.

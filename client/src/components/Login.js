@@ -2,10 +2,12 @@ import React from "react";
 import { GoogleLogin } from "react-google-login";
 //token
 import { refreshTokenSetup } from "../utils/refreshToken";
-
+// imports
+// client id for google login
 const clientId =
   "466243221982-l2hjhe4g7dcuq3h5ute68de36osa92su.apps.googleusercontent.com";
 
+// function handles user login page change.
 function Login({ handlePageChange }) {
   const onSuccess = (res) => {
     console.log("[Login Success] currentUser:", res.profileObj);
@@ -13,7 +15,7 @@ function Login({ handlePageChange }) {
     refreshTokenSetup(res);
     handlePageChange("Explore");
   };
-
+// handles if google login fails and changes page.
   const onFailure = (res) => {
     console.log("[Login failed] res:", res);
     handlePageChange("Main");
@@ -36,3 +38,4 @@ function Login({ handlePageChange }) {
 }
 
 export default Login;
+// exports google login feature 
