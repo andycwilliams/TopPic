@@ -1,7 +1,7 @@
 const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
-const router = express.Router();
+// const router = express.Router();
 const path = require("path");
 const dotenv = require("dotenv");
 dotenv.config();

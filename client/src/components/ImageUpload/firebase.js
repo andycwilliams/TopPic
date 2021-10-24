@@ -1,7 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
 require("dotenv").config();
-
 // import { getDatabase } from "firebase/database";
 
 // Set the configuration for your app

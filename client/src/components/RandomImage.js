@@ -13,7 +13,7 @@ function RandomImage() {
 
   const handleFetchMoreImages = () => {
     const randomImgRootUrl = `https://api.unsplash.com`;
-    //Access key for Upnsplash API in .env;
+    // Access key for Upnsplash API in .env;
     const accessKey = process.env.REACT_APP_ACCESSKEY;
 
     Axios.get(

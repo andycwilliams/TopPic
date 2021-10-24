@@ -14,7 +14,7 @@ function App() {
   };
 
   const renderPage = () => {
-    console.log("RENDER APPJS component", currentPage);
+    console.log("RENDER app.js component", currentPage);
     // Switch case
     switch (currentPage) {
       case "Main":
@@ -52,7 +52,7 @@ function App() {
               href="/"
               name="Explore"
               onClick={(e) => handlePageChange("Explore", e)}
-              // This makes it so when you click the continue without sign in in you can view the rest of the application without signing in 
+              // This makes it so when you click the continue without sign in in you can view the rest of the application without signing in
             >
               {" "}
               Continue without Signing In
