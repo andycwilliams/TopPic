@@ -3,6 +3,8 @@ const logger = require("morgan");
 const mongoose = require("mongoose");
 const router = express.Router();
 const path = require("path");
+const dotenv = require("dotenv");
+dotenv.config();
 
 const PORT = process.env.PORT || 3001;
 
@@ -16,13 +18,14 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "/client/build")));
-  // app.use(express.static(__dirname + "/client/build"));
+  app.use(express.static(path.join(__dirname, "./client/build")));
+  // app.use(express.static(path.join(__dirname, "client/build")));
+  // app.use("/static", express.static(path.join(__dirname, "client/build")));
 }
 
 if (process.env.NODE_ENV === "production") {
-  app.get("/*", (req, res) => {
-    res.sendFile(join(__dirname, "client", "build", "index.html"));
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "./client/build/index.html"));
   });
 }
 
@@ -42,14 +45,6 @@ app.get("/api", (req, res) => {
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
 });
-
-// from Maryus:
-// db.once('open', () => {
-//   app.listen(PORT, () => {
-//     console.log(`API server running on port ${PORT}!`);
-//     console.log(`Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`);
-//   });
-// });
 
 // get api for obtaining pics
 // get router to get pics set up
