@@ -28,5 +28,5 @@ const ExplorePage = () => {
     </div>
   );
 };
-
+// The class directly above this is the logout button that displays the google logout functionality. 
 export default ExplorePage;

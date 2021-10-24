@@ -52,7 +52,7 @@ function App() {
               href="/"
               name="Explore"
               onClick={(e) => handlePageChange("Explore", e)}
-              // This makes it so when you click the continue without sign in in you can view the rest of the application
+              // This makes it so when you click the continue without sign in in you can view the rest of the application without signing in 
             >
               {" "}
               Continue without Signing In

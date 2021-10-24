@@ -8,3 +8,5 @@ module.exports = {
       },
     },
   }
+
+  // this is used for setting up tailwind
