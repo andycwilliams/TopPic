@@ -1,6 +1,6 @@
 import uploadToFirebase from "./firebase";
 import { useState } from "react";
-// This is related to the file upload to firebase 
+// This is related to the file upload to firebase.
 const ImageUpload = () => {
   const [uploadedImage, setUploadedImage] = useState("");
 

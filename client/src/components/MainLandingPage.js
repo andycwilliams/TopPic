@@ -1,6 +1,6 @@
 import React from "react";
 import Login from "./Login";
-// this is the fist page to load it has the name of the site as well as our login feature and links to the page change functionality  
+// This is the fist page to load it has the name of the site as well as our login feature and links to the page change functionality.  
 const MainLandingPage = ({ handlePageChange, currentPage }) => {
   return (
     <div className="flex flex-col justify-center items-center w-2/4 h-screen bg-gray-200 bg-opacity-90">
@@ -22,6 +22,6 @@ const MainLandingPage = ({ handlePageChange, currentPage }) => {
     </div>
   );
 };
-// there the class above is a button that sends you to the github for this project.
-//  you may notice that there is a Continue without Signing In on the main page the code behind that is on the app.js page.
+// There the class above is a button that sends you to the github for this project.
+// You may notice that there is a Continue without Signing In on the main page the code behind that is on the app.js page.
 export default MainLandingPage;
